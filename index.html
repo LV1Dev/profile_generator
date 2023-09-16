@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Generator by LV1.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="overlay" style="display: none;">
+        <div id="popup">
+            <h2>Terms and Conditions</h2>
+            <p></p>
+            <p>This website is for educational and entertainment purposes only. The information provided is not intended for illegal or fraudulent use.</p>
+            <p>By accessing this website, you agree not to engage in any activities that may harm, disrupt, or interfere with the website or its users.</p>
+            <p>By using this website, you agree to these terms and conditions in their entirety.</p>
+            <button id="agree">Agree</button>
+            <button id="disagree">Disagree</button>
+        </div>
+    </div>
+
+    <div id="user-container">
+        <div id="user-image">
+          <img src="">
+        </div>
+        <div id="user-info">
+          <p><strong><i class="fa-solid fa-user"></i> User: </strong> <span id="name"></span></p>
+          <p><strong><i class="fa-solid fa-envelope"></i> Email: </strong> <span id="email"></span></p>
+          <p><strong><i class="fa-solid fa-lock"></i> Password: </strong> <span id="password"></span></p>
+          <p><strong><i class="fa-solid fa-phone"></i> Phone: </strong> <span id="phone"></span></p>
+          <p><strong><i class="fa-solid fa-location-dot"></i> Location: </strong> <span id="location"></span></p>
+        </div>
+        <button id="generate-user"><i class="fas fa-sync fa-spin"></i></i> New User</button>
+      </div>
+
+
+      <footer>
+        <p>Copyright © 2023 LV1 Development. All rights reserved.</p>
+      </footer>
+      
+      <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Golos Text', sans-serif; 
+  }
+
+  body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('images/bcg.png')no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #161616;
+  }
+
+#user-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    outline: 3px solid #3E8E41;
+    box-shadow: 0 0px 18px rgba(108, 255, 132, 0.9);
+  }
+  
+  #user-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  #user-info {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #dadada;
+    padding: 20px;
+    letter-spacing: 1px;
+    
+  }
+  
+  #user-info p {
+    margin: 10px 0;
+    padding: 10px;
+  }
+  
+  #generate-user {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: lighter;
+    background-color: #4CAF50;
+    color: #dadada;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.9);
+    
+  }
+
+  #generate-user:hover {
+    transition: .2s ease;
+    box-shadow: 0 0px 21px rgba(0, 0, 0, 1.5);
+  }
+
+  #name {
+    padding: 10px;
+  }
+  #email {
+    padding: 10px;
+  }
+  #phone {
+    padding: 10px;
+  }
+  #location {
+    padding: 10px;
+  }
+
+  #password-container {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  #password {
+    font-weight: lighter;
+    filter: blur(3px);
+    transition: all 0.1s ease;
+    padding: 20px;
+    transition: .2s ease;
+  }
+
+#password:hover {
+    filter: none;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #dadada;
+    padding: 50px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#popup h2 {
+    margin-top: 0;
+}
+
+#popup p {
+    margin-bottom: 20px;
+}
+
+#popup button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+#agree:hover {
+    background-color: #4CAF50;
+}
+
+#disagree:hover {
+    background-color: #ec332c;
+}
+
+
+footer {
+    background-color: transparent;
+    color: #dadada;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.6vh;
+    letter-spacing: 3px;
+}
